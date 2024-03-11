@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Loja de Tecnologia Virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #000000;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .produto {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            max-width: 300px;
+        }
+
+        .produto:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .produto img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .produto h2 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .produto h3 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .produto h4 {
+            text-align: center;
+            color: #0066ff;
+            margin-bottom: 20px;
+        }
+
+        .produto button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #0066ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .produto button:hover {
+            background-color: #0056cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Produtos</h1>
+
+    <div class="container">
+        <div class="produto" onclick="mostrarMensagem('Placa de Vídeo RTX 4060')">
+            <img src="placartx.jpg" alt="Placa de Vídeo RTX 4060">
+            <h2>Placa de Vídeo RTX 4060</h2>
+            <h3>Placa de Vídeo RTX 4060 Ti VENTUS 3X 8G OC MSI NVIDIA GeForce, 8 GB GDDR6, DLSS, Ray Tracing</h3>
+            <h4>R$ 2.499,99 À vista no PIX com até 10% OFF</h4>
+            <button>Comprar</button>
+        </div>
+        <div class="produto" onclick="mostrarMensagem('Console Playstation 5')">
+            <img src="playstation 5.jpg" alt="Console Playstation 5">
+            <h2>Console Playstation 5</h2>
+            <h3>Console Playstation 5 Sony, SSD 825GB, Controle sem fio DualSense, Edição Digital, Branco - 1214B</h3>
+            <h4>R$ 3.496,79 À vista no PIX com até 7% OFF</h4>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto" onclick="mostrarMensagem('Monitor Gamer')">
+            <img src="monitor gamer.jpg" alt="Monitor Gamer">
+            <h2>Monitor Gamer</h2>
+            <h3>GAMING MG320 27' Led, Curvo, 180 Hz, Full Hd, 1ms, Adaptive Sync, Hdmi/Displayport, Ajuste De Ângulo - KGMG32027PT</h3>
+            <h4>R$ 1.999,99 À vista no PIX com até 8% OFF</h4>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto" onclick="mostrarMensagem('Notebook Gamer')">
+            <img src="notebook gamer.jpg" alt="Notebook Gamer">
+            <h2>Notebook Gamer</h2>
+            <h3>Notebook Gamer Acer Nitro 5 Intel Core i7-11600H, 16GB RAM, NVIDIA GeForce RTX 3050, SSD 512GB, 17.3" FHD 144Hz IPS, Linux, Preto com vermelho</h3>
+            <h4>R$ 4.699,99 À vista no PIX com até 5% OFF</h4>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto" onclick="mostrarMensagem('Cadeira Gamer')">
+            <img src="cadeira gamer.jpg" alt="Cadeira Gamer">
+            <h2>Cadeira Gamer</h2>
+            <h3>GAMING Tempest CG600, Branco, Com Almofadas, Descanso Para Pernas Retrátil, Reclinável</h3>
+            <h4>R$ 729,90 À vista no PIX com até 5% OFF</h4>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto" onclick="mostrarMensagem('Headset Gamer')">
+            <img src="headset gamer.jpg" alt="Headset Gamer">
+            <h2>Headset Gamer</h2>
+            <h3>Headset Gamer Redragon Zeus X, Chroma Mk.II, RGB, Surround 7.1, USB, Drivers 53MM, Preto/Vermelho - H510-RGB</h3>
+            <h4>R$ 269,99 À vista no PIX com até 15% OFF</h4>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto" onclick="mostrarMensagem('Mouse Gamer')">
+            <img src="mouse gamer.webp" alt="Mouse Gamer">
+            <h2>Mouse Gamer</h2>
+            <h3>Mouse Gamer Logitech G502 Hero, 11 Botões, RGB, 16000 DPI, Preto</h3>
+            <h4>R$ 299,99 À vista no PIX com até 10% OFF</h4>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto" onclick="mostrarMensagem('Teclado Mecânico')">
+            <img src="teclado.jpg" alt="Teclado Mecânico">
+            <h2>Teclado Mecânico</h2>
+            <h3>Teclado Mecânico HyperX Alloy FPS RGB, Switches Cherry MX Red, Layout US, ABNT2, RGB, Preto</h3>
+            <h4>R$ 699,99 À vista no PIX com até 5% OFF</h4>
+            <button>Comprar</button>
+        </div>
+
+        <div class="produto" onclick="mostrarMensagem('SSD 1TB')">
+            <img src="ssd.jpg" alt="SSD 1TB">
+            <h2>SSD 1TB</h2>
+            <h3>SSD Kingston A2000 NVMe M.2 1TB, Leitura 2200MB/s, Gravação 2000MB/s - SA2000M8/1000G</h3>
+            <h4>R$ 799,99 À vista no PIX com até 5% OFF</h4>
+            <button>Comprar</button>
+        </div>
+    </div>
+
+        
+    </div>
+
+    <script>
+        function mostrarMensagem(nomeProduto) {
+            alert("Você selecionou o produto: " + nomeProduto);
+        }
+    </script>
+</body>
+</html>
